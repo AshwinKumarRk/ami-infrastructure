@@ -20,7 +20,7 @@
             "ssh_username": "{{user `ssh_username`}}",
             "ami_users": "{{ user `ami_users_shared`}}",
             "ami_name": "csye6225_{{timestamp}}",
-            "ami_description": "Ubuntu AMI for csye6225"s
+            "ami_description": "Ubuntu AMI for csye6225"
         }
     ],
     "provisioners": [
