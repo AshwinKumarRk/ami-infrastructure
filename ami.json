@@ -11,11 +11,11 @@
     "builders": [
         {
             "type": "amazon-ebs",
-            "access_key": "{{user `aws_access_key`}}",
-            "secret_key": "{{user `aws_secret_key`}}",
-            "region": "{{user `aws_region`}}",
+            "access_key": "{{user `AWS_ACCESS_KEY`}}",
+            "secret_key": "{{user `AWS_SECRET_KEY`}}",
+            "region": "{{user `AWS_REGION`}}",
             "instance_type": "t2.micro",
-            "subnet_id": "{{user `subnet_id`}}",
+            "subnet_id": "{{user `SUBNET_ID`}}",
             "source_ami": "{{user `source_ami`}}",
             "ssh_username": "{{user `ssh_username`}}",
             "ami_users": "{{ user `ami_users_shared`}}",
