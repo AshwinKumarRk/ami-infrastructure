@@ -28,9 +28,15 @@
             "type": "shell",
             "inline": [
                 "sudo apt-get update",
-                "sleep 31",
+                "sleep 30",
                 "sudo apt-get -qy upgrade",
                 "sleep 30",
+                "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
+                "sleep 20",
+                "chmod +x ./install",
+                "sudo ./install auto",
+                "sleep 10",
+                "sudo service codedeploy-agent start",
                 "sudo apt-get -qy --no-install-recommends install nginx -y",
                 "sudo apt-get -qy --no-install-recommends install curl -y",
                 "sleep 30",
@@ -38,10 +44,6 @@
                 "sleep 30",
                 "sudo apt-get install -qy --no-install-recommends nodejs -y",
                 "sudo apt-get install -qy --no-install-recommends unzip",
-                "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
-                "chmod +x ./install",
-                "sudo ./install auto",
-                "sudo service codedeploy-agent start",
                 "sudo apt-get clean",
                 "sudo rm -rf /var/lib/apt/lists/*"
             ]
