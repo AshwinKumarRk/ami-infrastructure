@@ -30,6 +30,7 @@
                 "sudo apt-get update",
                 "sleep 30",
                 "sudo apt-get -qy upgrade",
+                "sudo apt-get install wget",
                 "sleep 30",
                 "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
                 "sleep 20",
