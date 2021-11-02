@@ -38,6 +38,10 @@
                 "sleep 30",
                 "sudo apt-get install -qy --no-install-recommends nodejs -y",
                 "sudo apt-get install -qy --no-install-recommends unzip",
+                "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
+                "chmod +x ./install",
+                "sudo ./install auto",
+                "sudo service codedeploy-agent start",
                 "sudo apt-get clean",
                 "sudo rm -rf /var/lib/apt/lists/*"
             ]
