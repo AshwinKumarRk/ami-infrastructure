@@ -31,7 +31,7 @@
                 "sleep 30",
                 "sudo apt-get -qy upgrade",
                 "sudo apt-get -qy install wget",
-                "sudo apt-get install ruby -y",
+                "sudo apt-get install ruby-full -y",
                 "sleep 30",
                 "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
                 "sleep 20",
