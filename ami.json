@@ -27,7 +27,6 @@
         {
             "type": "shell",
             "inline": [
-                "sudo apt install --reinstall libappstream3",
                 "sudo apt-get update",
                 "sleep 30",
                 "sudo apt-get -qy upgrade",
