@@ -51,21 +51,8 @@ resource "aws_iam_policy" "gh-ec2-ami" {
   })
 }
 
-resource "aws_iam_role" "ghactions_access" {
-  name = "ghactions_access"
-  assume_role_policy = jsonencode({
-    "Version" : "2012-10-17",
-    "Statement" : [
-      {
-        "Effect" : "Allow",
-        "Principal" : { "AWS" : "arn:aws:iam::747013153111:user/ghactions-ami" },
-        "Action" : "sts:AssumeRole"
-      }
-    ]
-  })
-}
-
-resource "aws_iam_role_policy_attachment" "Attach_gh-ec2-ami_to_ghactions_access" {
-  role       = aws_iam_role.ghactions_access.name
+resource "aws_iam_policy_attachment" "Attach_gh-ec2-ami_to_ghactions-ami" {
+  name       = "gh-ec2-ami_to_ghactions-ami"
+  users      = ["ghactions-ami"]
   policy_arn = aws_iam_policy.gh-ec2-ami.arn
 }
