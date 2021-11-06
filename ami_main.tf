@@ -48,21 +48,21 @@ resource "aws_iam_policy" "gh-ec2-ami" {
         "Resource" : "arn:aws:ec2:*:*:*/*"
       },
       {
-            "Sid": "VisualEditor2",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:DescribeImages",
-                "ec2:DescribeInstances",
-                "ec2:DescribeTags",
-                "ec2:DescribeRegions",
-                "ec2:DescribeVolumes",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeSnapshots",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeInstanceStatus"
-            ],
-            "Resource": "*"
-        }
+        "Sid" : "VisualEditor2",
+        "Effect" : "Allow",
+        "Action" : [
+          "ec2:DescribeImages",
+          "ec2:DescribeInstances",
+          "ec2:DescribeTags",
+          "ec2:DescribeRegions",
+          "ec2:DescribeVolumes",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeSnapshots",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeInstanceStatus"
+        ],
+        "Resource" : "*"
+      }
     ]
   })
 }
