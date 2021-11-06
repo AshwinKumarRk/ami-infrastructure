@@ -1,1 +1,1 @@
-# ami-infrastructure checks
+# ami-infrastructure check
