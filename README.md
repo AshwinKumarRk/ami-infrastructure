@@ -1,6 +1,6 @@
 # AMI-INFRASTRUCTURE 
 
-## Steps to Run
+## Steps to Runs
 1. Apply the terraform configurations
    `terraform apply`
 2. Make a change in code/README.md
